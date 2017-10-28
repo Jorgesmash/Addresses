@@ -29,12 +29,6 @@ public class AddressesDbHelper extends SQLiteOpenHelper {
     }
 
     @Override
-    public void onOpen(SQLiteDatabase sqLiteDatabase) {
-        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + AddressesDbContract.FeedEntry.TABLE_NAME);
-        onCreate(sqLiteDatabase);
-    }
-
-    @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
     }
 }
