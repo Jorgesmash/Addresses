@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/locationNameLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Location name:" />
+
+    <EditText
+        android:id="@+id/locationNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_alignStart="@+id/locationNameLabelTextView"
+        android:layout_below="@+id/locationNameLabelTextView"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:text="">
+
+        <requestFocus/>
+    </EditText>
+
+    <TextView
+        android:id="@+id/streetAddressLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/locationNameEditText"
+        android:text="Street address:" />
+
+    <EditText
+        android:id="@+id/streetAddressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_alignStart="@+id/streetAddressLabelTextView"
+        android:layout_below="@+id/streetAddressLabelTextView"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/cityLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/streetAddressEditText"
+        android:text="City:" />
+
+    <EditText
+        android:id="@+id/cityEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_alignStart="@+id/streetAddressLabelTextView"
+        android:layout_below="@+id/cityLabelTextView"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/stateLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/cityEditText"
+        android:text="State:" />
+
+    <EditText
+        android:id="@+id/stateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_alignStart="@+id/streetAddressLabelTextView"
+        android:layout_below="@+id/stateLabelTextView"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/zipLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/stateEditText"
+        android:text="Zip code:" />
+
+    <EditText
+        android:id="@+id/zipEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_alignStart="@+id/streetAddressLabelTextView"
+        android:layout_below="@+id/zipLabelTextView"
+        android:maxLines="1"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:text=""/>
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zipEditText"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_red_light"
+        android:text="DELETE"/>
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zipEditText"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_green_light"
+        android:text="OK"/>
+
+</RelativeLayout>
